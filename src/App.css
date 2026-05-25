@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: #1a1a2e;
+  color: #eee;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.container {
+  background: #16213e;
+  border-radius: 20px;
+  padding: 28px 22px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 4px;
+  color: #e94560;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 13px;
+  color: #a0a0b0;
+  margin-bottom: 20px;
+}
+
+/* Статус */
+.status {
+  text-align: center;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.status.disconnected {
+  background: #2d1b1b;
+  color: #ff6b6b;
+}
+
+.status.connected {
+  background: #1b2d1b;
+  color: #6bff6b;
+}
+
+.status.scanning {
+  background: #2d2a1b;
+  color: #ffe66b;
+}
+
+.status.error {
+  background: #2d1b1b;
+  color: #ff6b6b;
+}
+
+/* Кнопки */
+.btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+  margin-top: 10px;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: #e94560;
+  color: #fff;
+}
+
+.btn-danger {
+  background: #3d1515;
+  color: #ff6b6b;
+  margin-top: 16px;
+}
+
+/* Форма */
+.config-form {
+  margin-top: 8px;
+}
+
+.field {
+  margin-bottom: 14px;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  color: #a0a0b0;
+  margin-bottom: 6px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 2px solid #0f3460;
+  background: #0a1628;
+  color: #fff;
+  font-size: 15px;
+  font-family: monospace;
+  letter-spacing: 1px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  border-color: #e94560;
+}
+
+/* Сообщения */
+.message {
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  text-align: center;
+  font-weight: 500;
+  animation: fadeIn 0.3s;
+}
+
+.message.success {
+  background: #1b2d1b;
+  color: #6bff6b;
+}
+
+.message.error {
+  background: #2d1b1b;
+  color: #ff6b6b;
+}
+
+.message.warning {
+  background: #2d2a1b;
+  color: #ffe66b;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
