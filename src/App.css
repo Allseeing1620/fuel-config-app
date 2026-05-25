@@ -27,6 +27,10 @@ body {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
 }
 
+.container-wide {
+  max-width: 420px;
+}
+
 h1 {
   text-align: center;
   font-size: 22px;
@@ -102,6 +106,173 @@ h1 {
   background: #3d1515;
   color: #ff6b6b;
   margin-top: 16px;
+}
+
+.btn-secondary {
+  background: #0f3460;
+  color: #eee;
+  margin-top: 8px;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #e94560;
+  color: #e94560;
+  margin-top: 12px;
+}
+
+.btn-add {
+  background: #1b2d3d;
+  color: #6bcfff;
+  border: 2px dashed #0f3460;
+  margin-top: 12px;
+}
+
+.btn-back {
+  background: none;
+  border: none;
+  color: #a0a0b0;
+  font-size: 14px;
+  padding: 0 0 12px;
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+
+.btn-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: none;
+  background: #3d1515;
+  color: #ff6b6b;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.sensors-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.sensor-block {
+  background: #0f1a30;
+  border-radius: 14px;
+  padding: 16px;
+  border: 1px solid #0f3460;
+}
+
+.sensor-block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.sensor-block-header h2 {
+  font-size: 15px;
+  color: #6bcfff;
+  font-weight: 600;
+}
+
+.sensor-hint {
+  font-size: 11px;
+  color: #a0a0b0;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.cal-summary {
+  font-size: 12px;
+  color: #6bff6b;
+  text-align: center;
+  margin-top: 14px;
+  padding: 10px;
+  background: #1b2d1b44;
+  border-radius: 10px;
+}
+
+.calibration-page h1 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.cal-section {
+  margin-bottom: 18px;
+}
+
+.cal-section h3 {
+  font-size: 13px;
+  color: #a0a0b0;
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 1.35;
+}
+
+.cal-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.field.compact label {
+  font-size: 12px;
+}
+
+.field.compact input {
+  font-size: 14px;
+  padding: 10px;
+}
+
+.preview-box {
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 16px;
+  font-size: 13px;
+}
+
+.preview-box.ok {
+  background: #1b2d1b;
+  border: 1px solid #2d5a2d;
+}
+
+.preview-box.err {
+  background: #2d1b1b;
+  color: #ff6b6b;
+}
+
+.preview-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.preview-label {
+  color: #a0a0b0;
+}
+
+.preview-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: #6bff6b;
+}
+
+.preview-example,
+.preview-note,
+.stored-cal {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #a0a0b0;
+  line-height: 1.4;
+}
+
+.stored-cal {
+  text-align: center;
+  margin-bottom: 12px;
+  color: #6bcfff;
 }
 
 /* Форма */

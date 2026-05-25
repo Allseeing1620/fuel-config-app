@@ -1,0 +1,4 @@
+#Mon May 25 14:50:45 MSK 2026
+base.0=/mnt/c/Project/react/fuel-config-app/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
