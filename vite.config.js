@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
-  base: '/fuel-config-app/',  // ← ВОТ ЭТУ СТРОКУ ДОБАВЬ
+  base: '/fuel-config-app/',
   plugins: [
     react(),
     VitePWA({
@@ -12,16 +12,22 @@ export default defineConfig({
         name: 'Настройка датчика топлива',
         short_name: 'FuelConfig',
         description: 'Настройка MAC-адреса датчика уровня топлива',
-        start_url: '/fuel-config-app/',  // ← И ЗДЕСЬ ПОМЕНЯЙ start_url
+        start_url: '/fuel-config-app/',
         display: 'standalone',
         background_color: '#1a1a2e',
         theme_color: '#e94560',
         orientation: 'portrait',
         icons: [
           {
-            src: 'icon-512.png',
+            src: '/fuel-config-app/icon-512.png',
             sizes: '512x512',
-            type: 'image/svg+xml',
+            type: 'image/png',
+            purpose: 'any maskable'
+          },
+          {
+            src: '/fuel-config-app/icon-512.png',
+            sizes: '192x192',
+            type: 'image/png',
             purpose: 'any maskable'
           }
         ]
