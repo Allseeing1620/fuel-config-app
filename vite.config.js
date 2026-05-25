@@ -19,7 +19,7 @@ export default defineConfig({
         orientation: 'portrait',
         icons: [
           {
-            src: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" rx="20" fill="%23e94560"/><text x="50" y="68" font-size="55" text-anchor="middle" fill="white">⛽</text></svg>',
+            src: 'icon-512.png',
             sizes: '512x512',
             type: 'image/svg+xml',
             purpose: 'any maskable'
