@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
+  base: '/fuel-config-app/',  // ← ВОТ ЭТУ СТРОКУ ДОБАВЬ
   plugins: [
     react(),
     VitePWA({
@@ -11,7 +12,7 @@ export default defineConfig({
         name: 'Настройка датчика топлива',
         short_name: 'FuelConfig',
         description: 'Настройка MAC-адреса датчика уровня топлива',
-        start_url: '/',
+        start_url: '/fuel-config-app/',  // ← И ЗДЕСЬ ПОМЕНЯЙ start_url
         display: 'standalone',
         background_color: '#1a1a2e',
         theme_color: '#e94560',
